@@ -61,32 +61,44 @@ python HybridCompression.py
 # Enter the path to the compressed file (e.g., comp.bin): comp.bin
 # Enter the path for the decompressed output (e.g., output.txt): output.txt
 ```
-📊 Results
-Original File Size: test2.txt → ~92 KB
+---
 
-Compressed File Size: comp.bin → ~71 KB
+## 📊 Results
 
-✅ ~23% size reduction achieved using the hybrid model.
+- **Original File Size:** `test2.txt` → **~92 KB**
+- **Compressed File Size:** `comp.bin` → **~71 KB**
+- **Size Reduction:** ✅ ~23% achieved using the hybrid compression model
 
-Visuals: output1.png, output2.png
+> 📈 Check the following visuals for more insights:
+- `output1.png` – Size comparison
+- `output2.png` – Compression process flowchart or ratio visualization
 
-✅ Features
-✅ Lossless compression
+---
 
-✅ Handles large text inputs
+## ✅ Features
 
-✅ Hybrid model for better space optimization
+- ✅ **Lossless Compression**
+- ✅ **Hybrid of LZ77 + Huffman for better optimization**
+- ✅ **Supports large text files**
+- ✅ **Simple CLI interface for compression and decompression**
 
-✅ Simple interface via terminal
+---
 
-📌 Note
-test2.txt contains educational theory content and is used here as a test input.
+## 📌 Notes
 
-Ensure your input file is in UTF-8 format.
+- The file `test2.txt` contains educational content used for compression testing.
+- For best results, ensure your custom input file is in **UTF-8** format and contains readable text data.
+- The script ignores unsupported characters during file reading if encoding issues arise.
 
-📚 References
-Huffman, D. A. (1952). A method for the construction of minimum-redundancy codes
+---
 
-Lempel, A., & Ziv, J. (1977). A universal algorithm for sequential data compression
+## 📚 References
 
-Python Standard Library: pickle, heapq, os
+- Huffman, D. A. (1952). *A Method for the Construction of Minimum-Redundancy Codes*.
+- Lempel, A., & Ziv, J. (1977). *A Universal Algorithm for Sequential Data Compression*.
+- Python Standard Library modules:
+  - [`heapq`](https://docs.python.org/3/library/heapq.html)
+  - [`pickle`](https://docs.python.org/3/library/pickle.html)
+  - [`os`](https://docs.python.org/3/library/os.html)
+
+---
