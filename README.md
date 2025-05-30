@@ -61,3 +61,32 @@ python HybridCompression.py
 # Enter the path to the compressed file (e.g., comp.bin): comp.bin
 # Enter the path for the decompressed output (e.g., output.txt): output.txt
 ```
+📊 Results
+Original File Size: test2.txt → ~92 KB
+
+Compressed File Size: comp.bin → ~71 KB
+
+✅ ~23% size reduction achieved using the hybrid model.
+
+Visuals: output1.png, output2.png
+
+✅ Features
+✅ Lossless compression
+
+✅ Handles large text inputs
+
+✅ Hybrid model for better space optimization
+
+✅ Simple interface via terminal
+
+📌 Note
+test2.txt contains educational theory content and is used here as a test input.
+
+Ensure your input file is in UTF-8 format.
+
+📚 References
+Huffman, D. A. (1952). A method for the construction of minimum-redundancy codes
+
+Lempel, A., & Ziv, J. (1977). A universal algorithm for sequential data compression
+
+Python Standard Library: pickle, heapq, os
