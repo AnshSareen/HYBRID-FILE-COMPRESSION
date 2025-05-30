@@ -71,7 +71,7 @@ python HybridCompression.py
 
 > 📈 Check the following visuals for more insights:
 - `output1.png` – Size comparison
-- `output2.png` – Compression process flowchart or ratio visualization
+- `output2.png` – ratio visualization
 
 ---
 
