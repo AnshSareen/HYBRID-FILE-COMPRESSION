@@ -1,53 +1,109 @@
-🚀 Hybrid File Compression using Huffman Coding & LZ77
-This project implements a hybrid text compression system that combines LZ77 tokenization with Huffman Coding to achieve efficient, lossless file compression. It’s designed to reduce file sizes while preserving the integrity of the original data — perfect for text-based file optimization.
+# Hybrid File Compression: Huffman + LZ77
 
-📄 Files Included
-File Name	Description
-HybridCompression.py	Main Python script implementing the compression & decompression logic.
-test2	Sample text file used as input for compression. (92 KB)
-comp.bin	Binary file output after compression. (71 KB)
+This project demonstrates a hybrid text compression system combining **Huffman coding** and **LZ77 compression** to achieve effective lossless data compression.
 
-📌 Features
-✅ Lossless compression using LZ77 + Huffman hybrid method
+---
 
-✅ Handles any text file (.txt, .log, .csv, etc.)
+## 📂 Project Structure
 
-✅ Saves compressed binary format using pickle
+├── HybridCompression.py # Main script containing compression/decompression logic
+├── test2.txt # Original uncompressed text (sample input)
+├── comp.bin # Compressed binary file generated from test2.txt
+├── output1.png # Output visual (e.g., size comparison chart - optional)
+├── output2.png # Output visual (e.g., compression ratio or flowchart - optional)
 
-✅ Full decompression support with integrity retention
+yaml
+Copy
+Edit
 
-🛠️ How It Works
-🔁 Compression Flow:
-LZ77 identifies repeated patterns in the input.
+---
 
-Matches and literals are encoded into a compact token bitstring.
+## 🧠 Technologies Used
 
-The bitstring is then further compressed using Huffman Coding.
+- **Python 3.8+**
+- Huffman Coding
+- LZ77 Compression
+- Pickle (for serialization)
+- Bitwise Manipulation
 
-All necessary metadata (codes, padding, etc.) are stored in the final .bin output.
+---
 
-🔁 Decompression Flow:
-Huffman decoding restores the LZ77 token bitstring.
+## 🚀 How It Works
 
-Tokens are unpacked and decompressed to reconstruct the original file.
+1. **LZ77 Compression**:
+   - The input text is tokenized using LZ77-style references.
+   - Tokens are encoded into a bit string.
 
-▶️ How to Run
+2. **Huffman Coding**:
+   - The token bit string is then compressed using Huffman encoding.
+   - Results in further reduction by encoding frequent patterns with shorter codes.
+
+3. **Decompression**:
+   - Huffman decoding is performed first.
+   - Then LZ77 decoding reconstructs the original content.
+
+---
+
+## 📌 Usage
+
+> Run from terminal or command prompt:
+
+### 🔹 Compression
+
+```bash
+python HybridCompression.py
+Then choose:
+
+pgsql
+Copy
+Edit
+Enter mode (c for compress, d for decompress): c
+Enter the path to the file to compress: test2.txt
+Enter the path for the compressed output (e.g., comp.bin): comp.bin
+🔹 Decompression
 bash
 Copy
 Edit
-# Run the script
 python HybridCompression.py
-You’ll be prompted to choose:
+Then choose:
 
-c – Compress a file
+lua
+Copy
+Edit
+Enter mode (c for compress, d for decompress): d
+Enter the path to the compressed file (e.g., comp.bin): comp.bin
+Enter the path for the decompressed output (e.g., output.txt): output.txt
+📊 Results
+Original File Size: test2.txt → ~92 KB
 
-d – Decompress a file
+Compressed File Size: comp.bin → ~71 KB
 
-📷 Sample Output
+✅ ~23% size reduction achieved using the hybrid model.
 
-📉 Compression Results
-Input File	Size
-test2	92 KB
-comp.bin	71 KB
-➡️ Reduction	~22.8%
+Check output1.png and output2.png for visual analysis.
+
+✅ Features
+✅ Lossless compression
+
+✅ Handles large text inputs
+
+✅ Hybrid model for better space optimization
+
+✅ Simple interface via terminal
+
+📌 Note
+test2.txt contains educational theory content and is used here as a test input.
+
+Ensure the file is in UTF-8 format if using your own input.
+
+📚 References
+Huffman, D. A. (1952). A method for the construction of minimum-redundancy codes.
+
+Lempel, A., & Ziv, J. (1977). A universal algorithm for sequential data compression.
+
+Python Standard Library: pickle, heapq, os
+
+🧑‍💻 Author
+Ansh Sareen
+
 
