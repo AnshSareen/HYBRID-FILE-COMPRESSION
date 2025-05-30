@@ -50,29 +50,22 @@ Edit
 
 ### 🔹 Compression
 
-```bash
+
 python HybridCompression.py
 Then choose:
 
 pgsql
-Copy
-Edit
 Enter mode (c for compress, d for decompress): c
 Enter the path to the file to compress: test2.txt
 Enter the path for the compressed output (e.g., comp.bin): comp.bin
 🔹 Decompression
-bash
-Copy
-Edit
+
 python HybridCompression.py
 Then choose:
-
-lua
-Copy
-Edit
 Enter mode (c for compress, d for decompress): d
 Enter the path to the compressed file (e.g., comp.bin): comp.bin
 Enter the path for the decompressed output (e.g., output.txt): output.txt
+
 📊 Results
 Original File Size: test2.txt → ~92 KB
 
