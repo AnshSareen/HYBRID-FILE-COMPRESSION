@@ -12,9 +12,6 @@ This project demonstrates a hybrid text compression system combining **Huffman c
 ├── output1.png # Output visual (e.g., size comparison chart - optional)
 ├── output2.png # Output visual (e.g., compression ratio or flowchart - optional)
 
-yaml
-Copy
-Edit
 
 ---
 
@@ -48,10 +45,10 @@ Edit
 
 > Run from terminal or command prompt:
 
-### 🔹 Compression
-
-
+```bash
 python HybridCompression.py
+```
+
 Then choose:
 
 pgsql
