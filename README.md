@@ -53,7 +53,7 @@ python HybridCompression.py
 # Enter the path to the file to compress: test2.txt
 # Enter the path for the compressed output (e.g., comp.bin): comp.bin
 ```
-### 🔹 DEcompression
+### 🔹 Decompression
 ```bash
 python HybridCompression.py
 # Then enter:
@@ -61,18 +61,6 @@ python HybridCompression.py
 # Enter the path to the compressed file (e.g., comp.bin): comp.bin
 # Enter the path for the decompressed output (e.g., output.txt): output.txt
 ```
----
-
-## 📊 Results
-
-- **Original File Size:** `test2.txt` → **~92 KB**
-- **Compressed File Size:** `comp.bin` → **~71 KB**
-- **Size Reduction:** ✅ ~23% achieved using the hybrid compression model
-
-> 📈 Check the following visuals for more insights:
-- `output1.png` – Size comparison
-- `output2.png` – ratio visualization
-
 ---
 
 ## ✅ Features
